@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.1.1</Version>
+    <Authors>Rocha, Willimar</Authors>
+    <Copyright>Willimar 2019 ©</Copyright>
+    <Description>Shared lib to use in API test-api1 and test-api2.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/willimar/crud.api</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReleaseNotes>Parameters models and mappers set here.</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>
