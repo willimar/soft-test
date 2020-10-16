@@ -1,0 +1,15 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build   
+WORKDIR /api1
+   
+# copy source
+COPY /soft-test-api1/. .
+
+RUN dotnet restore  
+RUN dotnet build --configuration Release 
+RUN dotnet publish -c Release -o out   
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime   
+WORKDIR /api1   
+COPY --from=build /api1/out ./
+
+ENTRYPOINT ["dotnet", "API 1.dll"]
