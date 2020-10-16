@@ -1,0 +1,16 @@
+﻿<h1>Olá: Meu nome é Willimar</h1>
+<p>Usei somente um repositório para executar o teste, mas normalmente usaria um repositório para cada API afim de facilitar o processo de deploy num fluxo de CI/CD</p>
+<ul>
+    <li><b>GuitHub: </b>https://github.com/willimar/soft-test</li>
+    <li><b>API 1: </b>https://github.com/willimar/soft-test/tree/main/soft-test-api1</li>
+    <li><b>API 2: </b>https://github.com/willimar/soft-test/tree/main/soft-test-api2</li>
+    <li><b>Lib: </b>https://github.com/willimar/soft-test/tree/main/soft-test-libs</li>
+</ul>
+<p>Para criar os docker files criei uma lib que coloquei no Nuget.Org [https://www.nuget.org/packages/api.test.core/]</p>
+<p>As imagens docker podem ser baixadas do docker hub</p>
+<p>Abaixo na lista o exemplo para levantar as APIs. Como está abaixo uma API não vai conseguir enxergar a outra.</p>
+<ul>
+    <li><b>API 1: </b>docker run -p 8100:80 -it willimar/soft-api1 --name taxa-juros</li>
+    <li><b>API 1: </b>docker run -p 8200:80 -it willimar/soft-api2 --name calculo-juros</li>
+</ul>
+<p>Para que a API 2 consiga enxergar a API 1 user setar a variavel de ambiente apiUrl</p>
