@@ -112,7 +112,6 @@ namespace soft.test.api.one
 
             });
 
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 
