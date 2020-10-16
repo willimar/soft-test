@@ -6,6 +6,6 @@ namespace api.test.core.interfaces
 {
     public interface IProvider<TEntity> where TEntity : IEntity
     {
-        List<TEntity> DataSet { get; set; }
+        List<TEntity> DataSet { get; }
     }
 }

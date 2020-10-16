@@ -2,20 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>soft.test.lib.api1</RootNamespace>
     <Version>1.0.1.1</Version>
     <Authors>Rocha, Willimar</Authors>
     <Copyright>Willimar 2020 ©</Copyright>
-    <Description>Shared lib to use in API test-api1 and test-api2.</Description>
+    <Description>Shared lib to use in API test-api1.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/willimar/soft-test/tree/main/soft-test-libs</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/willimar/soft-test/tree/main/soft-test-api1</PackageProjectUrl>
     <PackageReleaseNotes>Parameters models and mappers set here.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <PackageReference Include="api.test.core" Version="1.0.1.1" />
   </ItemGroup>
 
 </Project>

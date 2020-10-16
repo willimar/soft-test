@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API 1", "API 1\API 1.csproj", "{2CD94B47-D3E8-4661-B1B3-FCBB3E69FEDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "soft-test-lib-api1", "soft-test-lib-api1\soft-test-lib-api1.csproj", "{AA1CE9A0-439E-480F-B00D-5711FDD4A0B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "soft-test-lib-api1-tests", "soft-test-lib-api1-tests\soft-test-lib-api1-tests.csproj", "{9E7658FC-A47F-4FC3-906A-AD4D2716551F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CD94B47-D3E8-4661-B1B3-FCBB3E69FEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD94B47-D3E8-4661-B1B3-FCBB3E69FEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD94B47-D3E8-4661-B1B3-FCBB3E69FEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD94B47-D3E8-4661-B1B3-FCBB3E69FEDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA1CE9A0-439E-480F-B00D-5711FDD4A0B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA1CE9A0-439E-480F-B00D-5711FDD4A0B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA1CE9A0-439E-480F-B00D-5711FDD4A0B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA1CE9A0-439E-480F-B00D-5711FDD4A0B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E7658FC-A47F-4FC3-906A-AD4D2716551F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7658FC-A47F-4FC3-906A-AD4D2716551F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7658FC-A47F-4FC3-906A-AD4D2716551F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7658FC-A47F-4FC3-906A-AD4D2716551F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
