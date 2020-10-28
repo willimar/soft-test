@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>soft.test.lib.api2</RootNamespace>
+    <RootNamespace>Soft.CalculateInterest.Domain</RootNamespace>
     <Version>1.0.1.1</Version>
     <Authors>Rocha, Willimar</Authors>
     <Copyright>Willimar 2020 ©</Copyright>
@@ -11,9 +11,5 @@
     <PackageProjectUrl>https://github.com/willimar/soft-test/tree/main/soft-test-api1</PackageProjectUrl>
     <PackageReleaseNotes>Parameters models and mappers set here.</PackageReleaseNotes>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="api.test.core" Version="1.0.1.1" />
-  </ItemGroup>
 
 </Project>

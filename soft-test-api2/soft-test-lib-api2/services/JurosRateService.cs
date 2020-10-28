@@ -1,26 +1,31 @@
-﻿using System;
+﻿using Soft.CalculateInterest.Domain.interfaces;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Net.Http;
 using System.Text;
 
-namespace soft.test.lib.api2.services
+namespace Soft.CalculateInterest.Domain.services
 {
-    public class JurosRateService
+    public class JurosRateService: INavigator
     {
+        private readonly HttpClient _httpClient;
+
+        public JurosRateService(HttpClient httpClient)
+        {
+            this._httpClient = httpClient;
+        }
+
         public decimal Get(string url)
         {
             lock (this)
             {
-                using (var httpClient = new HttpClient())
-                {
-                    var response = httpClient.GetAsync(url).Result;
+                var response = this._httpClient.GetAsync(url).Result;
 
-                    var culture = new CultureInfo("en-US");
-                    decimal.TryParse(response.Content.ReadAsStringAsync().Result, NumberStyles.Float, culture, out decimal result);
+                var culture = new CultureInfo("en-US");
+                decimal.TryParse(response.Content.ReadAsStringAsync().Result, NumberStyles.Float, culture, out decimal result);
 
-                    return result;
-                }
+                return result;
             }            
         }
     }

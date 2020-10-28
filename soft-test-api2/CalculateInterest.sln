@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "soft-test-lib-api2", "soft-test-lib-api2\soft-test-lib-api2.csproj", "{AE7481FF-D793-410D-957F-B3DB44D84CA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculateInterest.Domain", "soft-test-lib-api2\Soft.CalculateInterest.Domain.csproj", "{AE7481FF-D793-410D-957F-B3DB44D84CA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "soft-test-lib-api2-tests", "soft-test-lib-api2-tests\soft-test-lib-api2-tests.csproj", "{66E7A3B4-0732-469B-86F7-152C30F81D16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculateInterest.Test", "soft-test-lib-api2-tests\Soft.CalculateInterest.Test.csproj", "{66E7A3B4-0732-469B-86F7-152C30F81D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API 2", "API 2\API 2.csproj", "{DF6879C6-ED5D-45D6-B5A4-F9CDB07930F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soft.CalculateInterest.Api", "API 2\Soft.CalculateInterest.Api.csproj", "{DF6879C6-ED5D-45D6-B5A4-F9CDB07930F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft.CalculateInterest.Application", "Soft.CalculateInterest.Application\Soft.CalculateInterest.Application.csproj", "{D8D4CBA3-8C08-498A-A2B4-972BF1FE78D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DF6879C6-ED5D-45D6-B5A4-F9CDB07930F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6879C6-ED5D-45D6-B5A4-F9CDB07930F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6879C6-ED5D-45D6-B5A4-F9CDB07930F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D4CBA3-8C08-498A-A2B4-972BF1FE78D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D4CBA3-8C08-498A-A2B4-972BF1FE78D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D4CBA3-8C08-498A-A2B4-972BF1FE78D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D4CBA3-8C08-498A-A2B4-972BF1FE78D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

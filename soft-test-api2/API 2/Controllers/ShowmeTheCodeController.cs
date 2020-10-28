@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace soft.test.api.two.Controllers
+namespace Soft.CalculateInterest.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/[Controller]/")]

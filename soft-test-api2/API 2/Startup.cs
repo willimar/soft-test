@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -12,9 +13,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using soft.test.lib.api2.services;
+using Soft.CalculateInterest.Application;
+using Soft.CalculateInterest.Domain.interfaces;
+using Soft.CalculateInterest.Domain.services;
 
-namespace soft.test.api.two
+namespace Soft.CalculateInterest.Api
 {
     public class Startup
     {
@@ -74,7 +77,8 @@ namespace soft.test.api.two
 
             #region Dependences
 
-            var urlApi = Environment.GetEnvironmentVariable("APIURL");
+            var urlApi = Environment.GetEnvironmentVariable("APIURL", EnvironmentVariableTarget.Machine);
+
             if (string.IsNullOrEmpty(urlApi))
             {
                 Program.RateApi = this.Configuration.ReadConfig<string>("Program", "RateApi");
@@ -84,9 +88,11 @@ namespace soft.test.api.two
                 Program.RateApi = urlApi;
             }
 
-            services.AddSingleton<JurosRateService>();
-            services.AddScoped<CalculateInterestService>();
-            
+            services.AddScoped<HttpClient>();
+            services.AddScoped<INavigator, JurosRateService>();
+            services.AddScoped<ICalculateInterestService, CalculateInterestService>();
+            services.AddScoped<CalculateInterestApplication>();            
+
             #endregion
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);

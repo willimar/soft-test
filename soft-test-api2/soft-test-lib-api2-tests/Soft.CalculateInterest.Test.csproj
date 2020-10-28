@@ -2,12 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>soft.test.lib.api2.tests</RootNamespace>
+    <RootNamespace>Soft.CalculateInterest.Test</RootNamespace>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="api.test.core" Version="1.0.1.1" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.9" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
@@ -24,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API 2\API 2.csproj" />
+    <ProjectReference Include="..\API 2\Soft.CalculateInterest.Api.csproj" />
   </ItemGroup>
 
 </Project>

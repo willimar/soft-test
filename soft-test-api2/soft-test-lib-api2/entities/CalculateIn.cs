@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace soft.test.lib.api2.entities
+namespace Soft.CalculateInterest.Domain.entities
 {
     public class CalculateIn
     {
