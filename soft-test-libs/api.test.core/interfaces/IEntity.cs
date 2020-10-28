@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace api.test.core.interfaces
+namespace Willimar.Provider.Core.interfaces
 {
     public interface IEntity
     {

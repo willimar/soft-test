@@ -1,11 +1,11 @@
-﻿using api.test.core.interfaces;
+﻿using Willimar.Provider.Core.interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace api.test.core
+namespace Willimar.Provider.Core
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : IEntity
     {

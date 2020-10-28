@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace soft.test.api.one
+namespace Soft.InterestRate.Api
 {
     public class Program
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace api.test.core.interfaces
+namespace Willimar.Provider.Core.interfaces
 {
     public interface IRepository<TEntity> where TEntity : IEntity
     {

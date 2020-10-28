@@ -1,5 +1,5 @@
-﻿using api.test.core.entities;
-using api.test.core.interfaces;
+﻿using Willimar.Provider.Core.entities;
+using Willimar.Provider.Core.interfaces;
 using FluentAssertions;
 using Moq;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace api.test.core.test.RepositoryTest
+namespace Willimar.Provider.Core.test.RepositoryTest
 {
     /// <summary>
     /// O objetivo do teste unitário não é garantir o funcionamento do sistema, mas validar a mutabilidade de seu comportamento.

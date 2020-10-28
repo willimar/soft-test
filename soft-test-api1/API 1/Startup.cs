@@ -1,23 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using api.test.core.interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using soft.test.api.one.providers;
-using soft.test.lib.api1.entities;
-using soft.test.lib.api1.repositories;
+using Soft.InterestRate.Domain.entities;
+using Soft.InterestRate.Domain.Services.Concrete;
+using Soft.InterestRate.Domain.Services.Interfaces;
+using System;
+using System.Linq;
+using System.Reflection;
 
-namespace soft.test.api.one
+namespace Soft.InterestRate.Api
 {
     public class Startup
     {
@@ -77,8 +72,8 @@ namespace soft.test.api.one
 
             #region Dependences
 
-            services.AddScoped<IProvider<InterestRate>>(result => new InterestRateProvider());
-            services.AddScoped<IRepository<InterestRate>, InterestRateRepository>();
+            services.AddScoped<IService<InterestRateEntity>, InterestRateService>();
+            services.AddScoped<InterestRateEntity>(r => new InterestRateEntity() { Value = 0.01M });
 
             #endregion
 

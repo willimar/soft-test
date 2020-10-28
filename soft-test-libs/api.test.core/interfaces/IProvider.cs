@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace api.test.core.interfaces
+namespace Willimar.Provider.Core.interfaces
 {
     public interface IProvider<TEntity> where TEntity : IEntity
     {

@@ -1,9 +1,9 @@
-﻿using api.test.core.interfaces;
+﻿using Willimar.Provider.Core.interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace api.test.core.entities
+namespace Willimar.Provider.Core.entities
 {
     public class BaseEntity: IEntity
     {
