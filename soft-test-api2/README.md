@@ -67,3 +67,24 @@ Dependências
 	#endregion
 ```
 
+
+### Testes `Soft.InterestRate.Test`
+
+Foram feitos testes de integração e unitários.
+
+### Teste de Integração
+
+- Para execução foi utilizado o pacote `Microsoft.AspNetCore.Mvc.Testing` e `FluentAssertions`.
+
+- Num total de 15 testes está sendo testado:
+* Controller de cálculo validando:
+    o Valores calculados para diferentes entradas que possibilitem validar se há ou não arredondamento.
+    o Acreditando que não possa haver cálculo de valores menor que zero foi feita a inclusão de uma validação e há um teste para garantir que a validação está sendo feita.
+    o Validação para caso a query string seja chamada de forma errada enviando valores como null. São duas possibilidades previstas
+* Controller Show me the code
+    o Validado somente a disponibilidade do controller
+
+### Teste Unitário
+- Para execução foi utilizado o pacote `Moq` e `FluentAssertions`.
+
+> **Observação** Foi somente repetido os testes de integração mocando o navigator para testar validações de resultado e validação de valores de parâmetros.
