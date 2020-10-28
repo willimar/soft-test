@@ -56,4 +56,9 @@ Foram feitos testes de integração e unitários.
 
 > **Observação** Neste teste me dei ao luxo de modificar os valores a serem retornados. Como o valor da API era HardCode não há critérios sobre valores negativos. Por este motivo não há qualquer validação a nível de serviço logo coloquei nos testes valores negativos.
 Num projeto, no futuro uma modificação proibindo valores negativos faria que alguns dos testes falhassem.
+### Publicando a solution em um container Docker
+- **gerando a imagem** No console digite o comando `docker build -t interest-rate .` e aguarde o término da execução. 
+- **gerando um container** No console digite o comando `docker run -p 8200:80 -it interest-rate`
+- **abrindo api no container** Abra o navegador de sua preferencia e digite na barra de endereços `http://localhost:8200`
+> **observação** Será necessário ter o Docker instalado para este procedimento. Utilizei a porta 8200 somente para evitar conflito com outras portas no meu computador, mas você pode alterar com quiser.
 
