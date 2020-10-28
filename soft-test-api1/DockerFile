@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build   
-WORKDIR /api1
+WORKDIR /interest-rate
    
 # copy source
 COPY . .
@@ -9,7 +9,7 @@ RUN dotnet build --configuration Release
 RUN dotnet publish -c Release -o out   
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime   
-WORKDIR /api1   
-COPY --from=build /api1/out ./
+WORKDIR /interest-rate   
+COPY --from=build /interest-rate/out ./
 
-ENTRYPOINT ["dotnet", "API 1.dll"]
+ENTRYPOINT ["dotnet", "Soft.InterestRate.Api.dll"]

@@ -73,7 +73,7 @@ namespace Soft.InterestRate.Api
             #region Dependences
 
             services.AddScoped<IService<InterestRateEntity>, InterestRateService>();
-            services.AddScoped<InterestRateEntity>(r => new InterestRateEntity() { Value = 0.01M });
+            services.AddSingleton<InterestRateEntity>(r => new InterestRateEntity() { Value = 0.01M });
 
             #endregion
 
