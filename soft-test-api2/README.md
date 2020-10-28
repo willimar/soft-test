@@ -88,3 +88,10 @@ Foram feitos testes de integração e unitários.
 - Para execução foi utilizado o pacote `Moq` e `FluentAssertions`.
 
 > **Observação** Foi somente repetido os testes de integração mocando o navigator para testar validações de resultado e validação de valores de parâmetros.
+
+### Publicando a solution em um container Docker
+- **gerando a imagem** No console digite o comando `docker build -t calculate-interest .` e aguarde o término da execução. 
+- **gerando um container** No console digite o comando `docker run -p 8300:80 -it calculate-interest`
+- **abrindo api no container** Abra o navegador de sua preferencia e digite na barra de endereços `http://localhost:8300`
+> **observação** Será necessário ter o Docker instalado para este procedimento. Utilizei a porta 8300 somente para evitar conflito com outras portas no meu computador, mas você pode alterar com quiser.
+No arquivo DockerFile existe na linha `15` o comando ` ENV APIURL http://localhost:8200/api/TaxaJuros`. O URL deste comando deve ser modificado para conter o URL correto da API 1.
