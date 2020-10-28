@@ -7,7 +7,7 @@
     <Authors>Rocha, Willimar</Authors>
     <Copyright>Willimar 2020 ©</Copyright>
     <Description>API for the evaluation process at Softplan.</Description>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/willimar/crud.api</PackageProjectUrl>
     <PackageReleaseNotes>Parameters models and mappers set here.</PackageReleaseNotes>
   </PropertyGroup>

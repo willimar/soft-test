@@ -32,7 +32,7 @@ namespace Soft.CalculateInterest.Test.unit
         {
             this._navigatorMock.Setup(get => get.Get("")).Returns(rate);
 
-            var result = this._application.Calculate(initialValue, months, "");
+            var result = this._application.Calculate(initialValue, months, "").Result;
 
             result.Should().Be(calculated);
         }
@@ -45,7 +45,7 @@ namespace Soft.CalculateInterest.Test.unit
         {
             this._navigatorMock.Setup(get => get.Get("")).Returns(rate);
 
-            Action action = () => this._application.Calculate(initialValue, months, "");
+            Action action = () => this._application.Calculate(initialValue, months, "").Wait();
 
             action.Should().Throw<ArgumentOutOfRangeException>();
         }

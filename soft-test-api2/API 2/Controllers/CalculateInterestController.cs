@@ -3,6 +3,7 @@ using Soft.CalculateInterest.Application;
 using Soft.CalculateInterest.Domain.entities;
 using Soft.CalculateInterest.Domain.services;
 using System;
+using System.Threading.Tasks;
 
 namespace Soft.CalculateInterest.Api.Controllers
 {
@@ -20,12 +21,12 @@ namespace Soft.CalculateInterest.Api.Controllers
 
         [HttpGet]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public decimal Get([FromQuery]decimal? valorInicial, [FromQuery] int? meses)
+        public async Task<decimal> Get([FromQuery]decimal? valorInicial, [FromQuery] int? meses)
         {
             var inicial = valorInicial ?? throw new ArgumentNullException(nameof(valorInicial));
             var moths = meses ?? throw new ArgumentNullException(nameof(meses));
 
-            return this._calculateInterestApplication.Calculate(inicial, moths, Program.RateApi);
+            return await this._calculateInterestApplication.Calculate(inicial, moths, Program.RateApi);
         }
     }
 }

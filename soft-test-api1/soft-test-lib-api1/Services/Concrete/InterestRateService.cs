@@ -11,7 +11,7 @@ namespace Soft.InterestRate.Domain.Services.Concrete
     {
         public async Task<decimal> Get(InterestRateEntity InterestRate)
         {
-            return InterestRate.Value;
+            return await Task<decimal>.Run(() => { return InterestRate.Value; });
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Soft.CalculateInterest.Test.unit
                 Rate = rate
             };
 
-            var result = service.Execute(value);
+            var result = service.Execute(value).Result;
 
             result.Should().Be(calculated);
         }
@@ -49,7 +49,7 @@ namespace Soft.CalculateInterest.Test.unit
                 Rate = rate
             };
 
-            Action action = () => service.Execute(value);
+            Action action = () => service.Execute(value).Wait();
 
             action.Should().Throw<ArgumentOutOfRangeException>();
         }

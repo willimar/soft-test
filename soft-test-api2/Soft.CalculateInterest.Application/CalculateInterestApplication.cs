@@ -2,6 +2,7 @@
 using Soft.CalculateInterest.Domain.interfaces;
 using Soft.CalculateInterest.Domain.services;
 using System;
+using System.Threading.Tasks;
 
 namespace Soft.CalculateInterest.Application
 {
@@ -16,7 +17,7 @@ namespace Soft.CalculateInterest.Application
             this._jurosRateService = jurosRateService;
         }
 
-        public decimal Calculate(decimal initial, int months, string rateApi)
+        public async Task<decimal> Calculate(decimal initial, int months, string rateApi)
         {
             var rate = this._jurosRateService.Get(rateApi);
 
@@ -27,7 +28,7 @@ namespace Soft.CalculateInterest.Application
                 Rate = (decimal)rate
             };
 
-            return this._calculateInterestService.Execute(calculatein);
+            return await this._calculateInterestService.Execute(calculatein);
         }
     }
 }
