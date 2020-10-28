@@ -54,6 +54,6 @@ Foram feitos testes de integração e unitários.
 ### Teste Unitário
 - Para execução foi utilizado o pacote `Moq` e `FluentAssertions`.
 
-> **Observação** Neste teste me dei ao luxo de modificar os valores a serem retornados. Como o valor da API era HardCode não há critérios sobre valores negativos. Por este motivo não há qualquer validação a nível de serviço e os valores são validados.
-Num projeto se houvesse no futuro uma modificação proibindo valores negativos alguns dos testes começariam a falhar.
+> **Observação** Neste teste me dei ao luxo de modificar os valores a serem retornados. Como o valor da API era HardCode não há critérios sobre valores negativos. Por este motivo não há qualquer validação a nível de serviço logo coloquei nos testes valores negativos.
+Num projeto, no futuro uma modificação proibindo valores negativos faria que alguns dos testes falhassem.
 
