@@ -39,3 +39,21 @@ Dependências
 > **Observação:** Ficou entendido que o valor da taxa de juros deveria ficar em HardCode, por este motivo não criei uma variável de ambiente para pegar este valor. Normalmente não colocaria valores fixo em código para evitar uma futura compilação.
 
 
+### Testes `Soft.InterestRate.Test`
+
+Foram feitos testes de integração e unitários.
+
+> **Observação:** O projeto de teste foi criado utilizando o xUnit. Para cada teste foi utilizada uma `Theory`, mas em um dos casos entendo que poderia ter sido utilizado um `Fact`.
+
+### Teste de Integração
+
+- Para execução foi utilizado o pacote `Microsoft.AspNetCore.Mvc.Testing` e `FluentAssertions`.
+
+> **Observação** Foi executado somente um teste, visto que a API deve retornar um valor fixo no código. A API tem somente um Get, por este motivo achei desnecessário executar testes para erro 404 e não vi necessidade de testes para erro 500 visto que estes seriam detectados no teste unitário.
+
+### Teste Unitário
+- Para execução foi utilizado o pacote `Moq` e `FluentAssertions`.
+
+> **Observação** Neste teste me dei ao luxo de modificar os valores a serem retornados. Como o valor da API era HardCode não há critérios sobre valores negativos. Por este motivo não há qualquer validação a nível de serviço e os valores são validados.
+Num projeto se houvesse no futuro uma modificação proibindo valores negativos alguns dos testes começariam a falhar.
+
