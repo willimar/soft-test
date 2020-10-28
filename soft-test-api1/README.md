@@ -11,7 +11,7 @@
 A Solution é composta por dois projetos
 
 1- `Soft.InterestRate.Api`
-- Representa a camanda de aplicação, responsável unicamente por efetuar a comunicação entre a camada de apresentação e a camada de domínio.
+- Representa a camada de aplicação, responsável unicamente por efetuar a comunicação entre a apresentação e a domínio.
 
 2 - `Soft.InterestRate.Domain`
 - Representa a camada de domínio, responsável por fornecer o valor a ser utilizado.
@@ -19,7 +19,7 @@ A Solution é composta por dois projetos
 
 ## Consumindo o Domínio
 
-Dependencias
+Dependências
 
 1 - `IService<InterestRateEntity>` serviço que irá fornecer o valor a ser retornado pelo `Controller`
 
