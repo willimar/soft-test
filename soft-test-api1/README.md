@@ -36,4 +36,6 @@ Dependências
 	#endregion
 ```
 
-> **Observação:** Ficou entendido que o valor da taxa de juros deveria ficar em HardCode, por este motivo não criei uma variavel de ambiente para pegar este valor. Normalmente não colocaria valores fixo em código para evitar uma futura compilação.
+> **Observação:** Ficou entendido que o valor da taxa de juros deveria ficar em HardCode, por este motivo não criei uma variável de ambiente para pegar este valor. Normalmente não colocaria valores fixo em código para evitar uma futura compilação.
+
+
