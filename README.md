@@ -6,14 +6,14 @@ O projeto é constituído de duas soluções distintas, que foram colocadas num 
 
 O projeto tem como finalidade simular um ambiente de cálculo de juros, composto de em micro serviços, onde um dos serviços retorna o valor dos juros e o outro executa o cálculo.
 
-## API 1 – [InterestRate](soft-test-api1/README.md)
+## soft-test-api1 – [InterestRate](soft-test-api1/README.md)
 API responsável por retornar a taxa de juros, possui somente um controller. Para ler mais sobre a API clique [aqui] (soft-test-api1/README.md)
 
 Localizado na pasta: [soft-test-api1](soft-test-api1).
 Solution name `InterestRate.sln`
 
 
-## API 2 – [CalculateInterest](soft-test-api2/README.md)
+## soft-test-api2 – [CalculateInterest](soft-test-api2/README.md)
 API responsável por executar o cálculo dos juros, possui dois controllers. Para ler mais sobre a API clique [aqui] (soft-test-api2/README.md)
 
 Localizado na pasta: [soft-test-api2](soft-test-api2).
