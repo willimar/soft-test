@@ -12,7 +12,7 @@
   - `^` representa o símbolo de potência;
   - `*` representa o símbolo de multiplicação;
   - `+` representa o símbolo de soma
-> **observação** O resultado final de ser truncado (não conter arredondamento) e deve conter duas casas decimais somente.
+> **observação** O resultado final deve ser truncado (não conter arredondamento) e deve conter duas casas decimais somente.
 
 ## 2) Show me the code
 * Nome da roda "/showmethecode"
