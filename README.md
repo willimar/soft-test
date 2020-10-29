@@ -26,8 +26,9 @@ Em ambas as APIs, foi utilizado o Swagger. O acessado ao URL root irá redirecio
 Para ambos os projetos, foi criado um arquivo DockerFile, para executar a criação de uma imagem docker. No readme de cada projeto tem instruções de como executar a criação das imagens assim como instruções de como executar o container.
 
 > **observação** Somente no container da API 2 foi utilizada **variável de ambiente**. Mais sobre a variável e sua finalidade poder ser lida no [readme](soft-test-api2/README.md) do projeto.
-> Para executar o push das imagens no docker hub eu habilitei o processo de CD com o buid automático. Veja as imagens abaixo a confirmação da entrega das imagens. 
-> Ná prática eu não usaria estes nomes.
+> Para executar o push das imagens no docker hub eu habilitei o processo de CD com o buid automático no docker hub. Veja as imagens abaixo a confirmação da entrega das imagens. 
+> Ná prática eu não usaria estes nomes para as imagens, mas a finalidade é apresentar o conhecimento.
+> Veja aqui as publicações [API 1](https://hub.docker.com/r/willimar/soft-api1) e [API 2](https://hub.docker.com/r/willimar/soft-api2)
 
 ![](images/api1-docker-build.png)
 ![](images/api2-docker-build.png)
